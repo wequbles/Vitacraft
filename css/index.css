@@ -834,6 +834,14 @@ body::-webkit-scrollbar {
   display: flex;
 }
 
+.store__tab {
+  display: none;
+}
+
+.Top_Products {
+  display: block;
+}
+
 .store__grid {
   display: -ms-grid;
   display: grid;

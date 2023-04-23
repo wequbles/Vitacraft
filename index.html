@@ -109,26 +109,92 @@
 				<div class="store">
 					<div class="store__title">Магазин</div>
 					<div class="store__cont">
-						<div class="store__grid">
-							<div class="store__card">
-								<div class="card__title">Заголовок</div>
-								<div class="card__subtitle">Подзаголовок</div>
-								<div class="card__price">125₽</div>
-								<div class="card__sale">-5%</div>
-								<div class="card__img">
-									<picture>
-										<source srcset="img/card__img.svg">
-										<img src="img/card__img.svg" alt="">
-									</picture>
+						<div id="Top_Products" class="Top_Products store__tab">
+							<div class="store__grid">
+								<div class="store__card">
+									<div class="card__title">Заголовок1</div>
+									<div class="card__subtitle">Подзаголовок</div>
+									<div class="card__price">125₽</div>
+									<div class="card__sale">-5%</div>
+									<div class="card__img">
+										<picture>
+											<source srcset="img/card__img.svg">
+											<img src="img/card__img.svg" alt="">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="Sets" class="Sets store__tab">
+							<div class="store__grid">
+								<div class="store__card">
+									<div class="card__title">Заголовок2</div>
+									<div class="card__subtitle">Подзаголовок</div>
+									<div class="card__price">125₽</div>
+									<div class="card__sale">-5%</div>
+									<div class="card__img">
+										<picture>
+											<source srcset="img/card__img.svg">
+											<img src="img/card__img.svg" alt="">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="Clans" class="Clans store__tab">
+							<div class="store__grid">
+								<div class="store__card">
+									<div class="card__title">Заголовок3</div>
+									<div class="card__subtitle">Подзаголовок</div>
+									<div class="card__price">125₽</div>
+									<div class="card__sale">-5%</div>
+									<div class="card__img">
+										<picture>
+											<source srcset="img/card__img.svg">
+											<img src="img/card__img.svg" alt="">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="Cases" class="Cases store__tab">
+							<div class="store__grid">
+								<div class="store__card">
+									<div class="card__title">Заголовок4</div>
+									<div class="card__subtitle">Подзаголовок</div>
+									<div class="card__price">125₽</div>
+									<div class="card__sale">-5%</div>
+									<div class="card__img">
+										<picture>
+											<source srcset="img/card__img.svg">
+											<img src="img/card__img.svg" alt="">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="Other" class="Other store__tab">
+							<div class="store__grid">
+								<div class="store__card">
+									<div class="card__title">Заголовок5</div>
+									<div class="card__subtitle">Подзаголовок</div>
+									<div class="card__price">125₽</div>
+									<div class="card__sale">-5%</div>
+									<div class="card__img">
+										<picture>
+											<source srcset="img/card__img.svg">
+											<img src="img/card__img.svg" alt="">
+										</picture>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="store__menu">
-							<button class="store__menu__btn">Топовые товары</button>
-							<button class="store__menu__btn">Наборы</button>
-							<button class="store__menu__btn">Кланы</button>
-							<button class="store__menu__btn">Кейсы</button>
-							<button class="store__menu__btn">Разное</button>
+							<button class="store__menu__btn" onclick="openCity(event, 'Top_Products')">Топовые товары</button>
+							<button class="store__menu__btn" onclick="openCity(event, 'Sets')">Наборы</button>
+							<button class="store__menu__btn" onclick="openCity(event, 'Clans')">Кланы</button>
+							<button class="store__menu__btn" onclick="openCity(event, 'Cases')">Кейсы</button>
+							<button class="store__menu__btn" onclick="openCity(event, 'Other')">Разное</button>
 						</div>
 					</div>
 				</div>
