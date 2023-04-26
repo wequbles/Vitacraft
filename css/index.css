@@ -92,7 +92,10 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-tap-highlight-color{
-  transparent;
+  color: rgba(255, 255, 255, 0);
+}
+body::-webkit-tap-highlight-color{
+  color: transparent;
 }
 
 .wrapper {
