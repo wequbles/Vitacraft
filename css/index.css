@@ -91,9 +91,7 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-body::-webkit-tap-highlight{
-  color: transparent;
-}
+-webkit-tap-highlight-color: transparent;
 
 .wrapper {
   min-height: 100vh;
