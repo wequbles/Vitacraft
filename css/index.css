@@ -337,12 +337,11 @@ body::-webkit-scrollbar {
   }
 }
 
-.menu_burger {
-  height: 40px;
-  width: 40px;
+.menu_burger img {
+  width: 32px;
 }
 @media (min-width: 645px) {
-  .menu_burger {
+  .menu_burger img {
     display: none;
   }
 }
@@ -365,7 +364,6 @@ body::-webkit-scrollbar {
   }
 }
 .authorization .menu__signin img {
-  height: 32px;
   width: 32px;
 }
 @media (min-width: 767px) {
