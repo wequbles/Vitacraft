@@ -16,16 +16,30 @@ $(document).ready(function() {
 	});
 });
 
-function openCity(evt, tabName) {
-  var i, store__tab, store__menu__btn;
-  store__tab = document.getElementsByClassName("store__tab");
-  for (i = 0; i < store__tab.length; i++) {
-    store__tab[i].style.display = "none";
-  }
-  store__menu__btn = document.getElementsByClassName("store__menu__btn");
-  for (i = 0; i < store__menu__btn.length; i++) {
-    store__menu__btn[i].className = store__menu__btn[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+function openCity(evt, storeTabName) {
+	var i, store__tab, store__menu__btn;
+	store__tab = document.getElementsByClassName("store__tab");
+	for (i = 0; i < store__tab.length; i++) {
+		store__tab[i].style.display = "none";
+	}
+	store__menu__btn = document.getElementsByClassName("store__menu__btn");
+	for (i = 0; i < store__menu__btn.length; i++) {
+		store__menu__btn[i].className = store__menu__btn[i].className.replace(" active", "");
+	}
+	document.getElementById(storeTabName).style.display = "block";
+	evt.currentTarget.className += " active";
+}
+
+function openCity(evt, teamTabName) {
+	var i, team__tab, team__btn;
+	team__tab = document.getElementsByClassName("team__tab");
+	for (i = 0; i < team__tab.length; i++) {
+		team__tab[i].style.display = "none";
+	}
+	team__btn = document.getElementsByClassName("team__btn");
+	for (i = 0; i < team__btn.length; i++) {
+		team__btn[i].className = team__btn[i].className.replace(" active", "");
+	}
+	document.getElementById(teamTabName).style.display = "block";
+	evt.currentTarget.className += " active";
 }
