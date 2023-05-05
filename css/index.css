@@ -1021,37 +1021,43 @@ html {
 }
 
 .clans__grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  max-width: 1270px;
+  margin: 20px auto 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 20px 200px 20px 200px;
+  -ms-grid-columns: 410px 20px 410px 20px 410px;
+      grid-template: repeat(3, 200px)/repeat(3, 410px);
+  grid-auto-flow: row;
   gap: 20px;
-}
-
-.clans__grid:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .clans__card {
   background: rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .clans__card__img {
-  height: 200px;
   width: 200px;
+  height: 200px;
 }
 .clans__card__img img {
-  height: 100%;
   width: 100%;
+  height: 100%;
+}
+
+.clans__card__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
 }
 
 .clans__card__title {
+  margin: 10px 0 0;
+  text-align: center;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -1059,6 +1065,7 @@ html {
 }
 
 .clans__card__set {
+  margin: 10px 0 0 10px;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1066,6 +1073,7 @@ html {
 }
 
 .clans__card__owner {
+  margin: 4px 0 0 10px;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1073,6 +1081,7 @@ html {
 }
 
 .clans__card__total {
+  margin: 4px 0 0 10px;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1080,6 +1089,9 @@ html {
 }
 
 .clans__card__more {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1181,6 +1193,10 @@ html {
   background: #C6C19B;
 }
 
+.team {
+  position: relative;
+}
+
 .team__title {
   font-weight: 500;
   font-size: 24px;
@@ -1207,6 +1223,10 @@ html {
   display: flex;
 }
 
+.team__avatar img {
+  width: 300px;
+}
+
 .team__card__body {
   margin: 0 0 0 40px;
 }
@@ -1216,6 +1236,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  margin: 40px 0 0;
 }
 
 .team__card__name {
@@ -1263,18 +1284,86 @@ html {
   color: #181818;
 }
 
+.team__nav {
+  position: absolute;
+  bottom: 40px;
+  left: 393px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+.team__nav__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.team__nav__arrow_right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.team__btn {
+  width: 40px;
+  height: 40px;
+}
+.team__btn img {
+  width: 100%;
+  height: 100%;
+}
+
 .about__thanks {
   margin: 20px 0 0;
-  padding: 20px 0;
+  padding: 20px 10px;
   border: 1px solid #ECECEC;
 }
 
-.about__thanks__title {
+.thanks {
+  overflow: hidden;
+}
+
+.thanks__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.thanks__cont {
+  margin: 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.thanks__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thanks__user__avatar {
+  width: 32px;
+  height: 32px;
+}
+.thanks__user__avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.thanks__user__nickname {
+  margin: 0 0 0 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .other {
