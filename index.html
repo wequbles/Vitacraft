@@ -15,7 +15,7 @@
 		<meta property="og:type" content="article">
 		<meta property="og:title" content="Проект Vitacraft">
 		<meta property="og:description" content="Развивайся и общайся, чтобы испытать опыт первобытного человека и вместе пройти все эпохи, которые прошло человечество за миллионы лет.">
-		<meta property="og:image" content="https://raw.githubusercontent.com/wequbles/Vitacraft/4b49934b576e566965456ce4e915ef5c84d66f67/img/logo.svg">
+		<meta property="og:image" content="https://github.com/wequbles/Vitacraft/blob/main/img/bg.jpg">
 		<meta property="og:url" content="https://wequbles.github.io/Vitacraft/">
 		<meta property="og:site_name" content="Сайт Vitacraft">
 		<!-- Twitter Cards -->
@@ -23,7 +23,7 @@
 		<meta name="twitter:site" content="автор">
 		<meta name="twitter:title" content="Проект Vitacraft">
 		<meta name="twitter:description" content="Развивайся и общайся, чтобы испытать опыт первобытного человека и вместе пройти все эпохи, которые прошло человечество за миллионы лет.">
-		<meta name="twitter:image" content="https://raw.githubusercontent.com/wequbles/Vitacraft/4b49934b576e566965456ce4e915ef5c84d66f67/img/logo.svg">
+		<meta name="twitter:image" content="https://github.com/wequbles/Vitacraft/blob/main/img/bg.jpg">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -59,7 +59,7 @@
 			</form>
 		</div>
 	</div>
-</div><div id="form" class="modal_wrapper">
+</div><div id="form" class="modal_wrapper form">
 	<div class="modal_content">
 		<div class="modal">
 			<form action="#menu"><button class="modal__close_btn"></button></form>
@@ -92,6 +92,52 @@
 			</div>
 		</div>
 	</div>
+</div><div id="buy_form" class="modal_wrapper buy_form">
+	<div class="modal_content">
+		<div class="modal">
+			<form action="#store"><button class="modal__close_btn"></button></form>
+			<div class="modal__cont">
+				<div class="buy_form__title">Заголовок</div>
+				<div class="buy_form__descryption">
+					Тут будет находиться описание опции, которую можно купить:
+					<br>- Разные пункты
+					<br>- Такие длинные ещё например
+					<br>- Пункты настолько длинные, что не помещаются в одну строчку
+					<br>- Но и короткие будут
+					<br>А также ещё больше описания, чтобы убедить купить товар.
+				</div>
+				<div class="buy_form__control">
+					<div class="buy_form__counter">
+						<button type="button" class="counter__down">
+							<picture>
+								<source srcset="img/counter__down.svg">
+								<img src="img/counter__down.svg" alt="">
+							</picture>
+						</button>
+						<div class="counter__box">
+							<input type="number" class="counter__input" min="1" max="1000" value="1">
+						</div>
+						<button type="button" class="counter__up">
+							<picture>
+								<source srcset="img/counter__up.svg">
+								<img src="img/counter__up.svg" alt="">
+							</picture>
+						</button>
+					</div>
+					<button type="button" class="buy_form__buy_btn green_btn">Далее (8900$)</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><div id="form" class="modal_wrapper">
+	<div class="modal_content">
+		<div class="modal">
+			<form action="#menu"><button class="modal__close_btn"></button></form>
+			<div class="modal__cont">
+				
+			</div>
+		</div>
+	</div>
 </div>			<div class="content">
 				<div class="top">
 					<div class="top__body">
@@ -102,16 +148,17 @@
 							</picture>
 						</div>
 						<div class="top__subtitle">Развивайся и общайся, чтобы испытать опыт первобытного человека и вместе пройти все эпохи, которые прошло человечество за миллионы лет.</div>
-						<form action="#"><button class="top__btn top__btn_1 green_btn">Трейлер</button></form>
+						<form action="test.html"><button class="top__btn top__btn_1 green_btn">Трейлер</button></form>
 						<form action="#"><button class="top__btn top__btn_2 green_btn">Играть</button></form>
 					</div>
 				</div>
-				<div class="store">
+				<div id="store" class="store">
 					<div class="store__title">Магазин</div>
 					<div class="store__cont">
 						<div id="Top_Products" class="store__tab Top_Products">
 							<div class="store__grid">
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title_2">
 										<div class="card__title">Кейс лут</div>
 										<div class="card__subtitle">МОБЫ</div>
@@ -124,8 +171,15 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title_2">
 										<div class="card__title">Кейс питомцы</div>
 										<div class="card__subtitle">Собаки</div>
@@ -138,8 +192,15 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title_2">
 										<div class="card__title">Стартовый набор</div>
 										<div class="card__subtitle">ОРУЖИЕ</div>
@@ -152,8 +213,15 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title_1">
 										<div class="card__title">Семена</div>
 										<div class="card__price">190₽</div>
@@ -165,8 +233,15 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title_1">
 										<div class="card__title">Саженцы</div>
 										<div class="card__price">180₽</div>
@@ -178,8 +253,15 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title_2">
 										<div class="card__title">Кейс  косметика</div>
 										<div class="card__subtitle _legendary">ЛЕГЕНДАРНЫЙ</div>
@@ -191,8 +273,15 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title_1">
 										<div class="card__title">Клан 20</div>
 										<div class="card__price">380₽</div>
@@ -204,8 +293,15 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title_1">
 										<div class="card__title">Клан 10</div>
 										<div class="card__price">200₽</div>
@@ -216,12 +312,19 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div id="Sets" class="store__tab Sets">
 							<div class="store__grid">
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title">Заголовок2</div>
 									<div class="card__subtitle">Подзаголовок</div>
 									<div class="card__price">125₽</div>
@@ -232,12 +335,19 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div id="Clans" class="store__tab Clans">
 							<div class="store__grid">
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title">Заголовок3</div>
 									<div class="card__subtitle">Подзаголовок</div>
 									<div class="card__price">125₽</div>
@@ -248,12 +358,19 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div id="Cases" class="store__tab Cases">
 							<div class="store__grid">
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title">Заголовок4</div>
 									<div class="card__subtitle">Подзаголовок</div>
 									<div class="card__price">125₽</div>
@@ -264,12 +381,19 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div id="Other" class="store__tab Other">
 							<div class="store__grid">
 								<div class="store__card">
+									<form action="#buy_form"><button></button></form>
 									<div class="card__title">Заголовок5</div>
 									<div class="card__subtitle">Подзаголовок</div>
 									<div class="card__price">125₽</div>
@@ -280,11 +404,17 @@
 											<img src="img/store__card__img.svg" alt="">
 										</picture>
 									</div>
+									<div class="add_basket">
+										<picture>
+											<source srcset="img/add_basket.svg">
+											<img src="img/add_basket.svg" alt="">
+										</picture>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="store__menu">
-							<button class="store__menu__btn" onclick="openCity(event, 'Top_Products')">Топовые товары</button>
+							<button class="store__menu__btn store__menu__btn_active" onclick="openCity(event, 'Top_Products')">Топовые товары</button>
 							<button class="store__menu__btn" onclick="openCity(event, 'Sets')">Наборы</button>
 							<button class="store__menu__btn" onclick="openCity(event, 'Clans')">Кланы</button>
 							<button class="store__menu__btn" onclick="openCity(event, 'Cases')">Кейсы</button>
