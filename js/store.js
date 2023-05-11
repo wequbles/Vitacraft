@@ -6,8 +6,8 @@ function openCity(evt, storeTabName) {
 	}
 	store__menu__btn = document.getElementsByClassName("store__menu__btn");
 	for (i = 0; i < store__menu__btn.length; i++) {
-		store__menu__btn[i].className = store__menu__btn[i].className.replace(" active", "");
+		store__menu__btn[i].className = store__menu__btn[i].className.replace(" store__menu__btn_active", "");
 	}
 	document.getElementById(storeTabName).style.display = "block";
-	evt.currentTarget.className += " active";
+	evt.currentTarget.className += " store__menu__btn_active";
 }
